@@ -63,41 +63,24 @@ Description : Responsive Layouts.
 
 
 		@media screen and (min-width: 769px) {
-    		.large {
-        		width: 100%;
-    		}
-    		.medium {
-        		width: 70%;
-    		}
-    		.small {
-        		width: 30%;
-    		}
+    		.large { width: 100%;}
+    		.medium { width: 70%;}
+    		.small { width: 30%;}
 		}
 
         @media screen and (min-width: 481px) and (max-width: 768px) {
-    		.menu, .main {
-        		width: 100%;
-    		}
-    		.large {
-        		width: 100%;
-    		}
-    		.medium {
-        		width: 60%;
-    		}
-    		.small {
-        		width: 40%;
-    		}
+    		.menu { width: 100%; display: inline-block;}
+			.main { margin-left: 0;} 
+    		.large { width: 100%;}
+    		.medium { width: 60%;}
+    		.small { width: 40%;}
 		}
 
         @media screen and (max-width: 480px) {
-    		.menu, .main {
+    		.news-item header h1 { font-size: 18px;}
+    		.medium, .small {
         		width: 100%;
-    		}
-    		.large, .medium, .small {
-        		width: 100%;
-    		}
-    		h1 {
-        		font-size: 18px;
+				float: none;
     		}
 		}
         
