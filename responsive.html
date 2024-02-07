@@ -62,26 +62,44 @@ Description : Responsive Layouts.
 		}
 
 
-		@media screen and (min-width: 769px) {			
-			.large { 
-				/*I need some CSS codes.*/
-			}
-			.medium { 
-				/*I need some CSS codes.*/
-			}
-			.small { 
-				/*I need some CSS codes.*/
-			 }
+		@media screen and (min-width: 769px) {
+    		.large {
+        		width: 100%;
+    		}
+    		.medium {
+        		width: 70%;
+    		}
+    		.small {
+        		width: 30%;
+    		}
 		}
 
-        @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
-        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+    		.menu, .main {
+        		width: 100%;
+    		}
+    		.large {
+        		width: 100%;
+    		}
+    		.medium {
+        		width: 60%;
+    		}
+    		.small {
+        		width: 40%;
+    		}
+		}
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
-        }
-
+    		.menu, .main {
+        		width: 100%;
+    		}
+    		.large, .medium, .small {
+        		width: 100%;
+    		}
+    		h1 {
+        		font-size: 18px;
+    		}
+		}
         
     </style>
 </head>
