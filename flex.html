@@ -67,53 +67,73 @@ Description : Flex Layouts.
 		}
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
-        .container { 
-			/*I need some CSS codes.*/
-		 }
-        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
-		.body { 
-			/*I need some CSS codes.*/
-		}
-        .main { 
-			padding: 15px; 
-			/*I need some CSS codes.*/
-		}
-        
-        .news-item { padding: 10px; }
-        .row { 
-			/*I need some CSS codes.*/
-		}
-        
 
-        @media screen and (min-width: 769px) {
-            .menu { width: 150px; }     
+
+		.container { 
+			display: flex;
+			flex-direction: column;
+		}
+
+		.header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
+
+		.body { 
+			display: flex;
+			flex-direction: row;
+		}
+
+		.main { 
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+		}
+
+		.news-item { padding: 10px; }
+
+		.row { 
+			display: flex;
+			flex-direction: row;
+		}
+		
+
+		@media screen and (min-width: 769px) {
+			.body { 
+				flex-direction: column;
+			}
+			.menu ul { 
+				flex-direction: column;
+			}
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 60%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
-			 }       
-        }
-
-        @media screen and (max-width: 768px) {
-			.body { 
-				/*I need some CSS codes.*/
+				width: 40%;
 			}
-            .menu ul { 
-				/*I need some CSS codes.*/
-			 }            
-            /*I need some CSS codes.*/
-        }
+		}
 
-        @media screen and (max-width: 480px) {
-            .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
-				/*I need some CSS codes.*/
-			 }
-        }
+		@media screen and (max-width: 768px) {
+			.body { 
+				flex-direction: column;
+			}
+			.menu ul { 
+				flex-direction: column;
+			}
+			.large, .medium, .small { 
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.news-item header h1 { 
+				font-size: 18px; 
+			}
+			.medium, .small { 
+				width: 100%;
+			}
+		}
+      
     </style>
 </head>
 <body>
